@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 7f;
+    
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private Transform cameraTransform;
     
@@ -19,8 +19,10 @@ public class Player : MonoBehaviour
         forward.Normalize();
         right.Normalize();
 
+        float currentSpeed = playerMovement.GetCurrentSpeed();
+
         Vector3 moveDir = forward * inputVector.y + right * inputVector.x;
-        transform.position += moveDir * moveSpeed * Time.deltaTime;
+        transform.position += moveDir * currentSpeed * Time.deltaTime;
        
     }
 }
