@@ -759,7 +759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d5b59a75720f65459e226543b5b68c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  moveSpeed: 7
   playerMovement: {fileID: 1882241444}
   cameraTransform: {fileID: 330585546}
 --- !u!54 &1109532345
@@ -841,6 +840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a90f8043f4aa6d4ca5976dc39144bdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  walkSpeed: 5
+  sprintSpeed: 9
 --- !u!114 &1109532349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -941,6 +942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a90f8043f4aa6d4ca5976dc39144bdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  walkSpeed: 5
+  sprintSpeed: 9
 --- !u!4 &1882241445
 Transform:
   m_ObjectHideFlags: 0
